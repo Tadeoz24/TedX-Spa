@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./styles.css">
+    <title>ted</title>
+</head>
+
+<body>
+    <section id="home">
+
+        <header id="Header_main">
+            <a href="#"><img id="logo-image" src="./images/Header-Logo.png" alt=""></a>
+            <ul id="menu">
+                <li><a href="#">About</a></li>
+                <li><a href="/our-team.html">Our Team</a></li>
+                <li><a href="/alumni.html">Alumni</a></li>
+                <li><a href="/sponsors.html">Sponsors</a></li>
+                <li><a href="/speakers.html">Contact Us</a></li>
+                <li class="register_button"><a href="Register">Register</a></li>
+            </ul>
+        </header>
+
+        <h1>home</h1>
+    </section>
+    <section id="About">
+        <h1>About</h1>
+    </section>
+    <section id="Venue">
+        <h1>venue</h1>
+    </section>
+    <section id="Connect">
+        <h1>connect with us</h1>
+    </section>
+    <section id="Date">
+        <h1>data and time</h1>
+    </section>
+    <section id="Time_left">
+        <h1>timer</h1>
+    </section>
+    <section id="footer_main">
+        <footer>
+            <h1>footer</h1>
+        </footer>
+    </section>
+    <script>
+        /* 
+        When the user scrolls down 50px from the top of the document, resize the header's font size
+        and Color  //Needs work 
+        */
+        window.onscroll = function () { scrollFunction() };
+
+        function scrollFunction() {
+            if (document.body.scrollTop > 50 || document.documentElement.scrollTop > 50) {
+                document.getElementById("Header_main").style.height = "62px";
+                document.getElementById("Header_main").style.backgroundColor = "black";
+
+            } else {
+                document.getElementById("Header_main").style.height = "82px";
+                document.getElementById("Header_main").style.backgroundColor = "rgba(0, 0, 0, 0.15)";
+            }
+        }
+    </script>
+</body>
+
+</html>
