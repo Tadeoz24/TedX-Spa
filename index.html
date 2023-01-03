@@ -5,48 +5,126 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./styles.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Catamaran:wght@900&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+    <link rel="stylesheet" href="/styles.css">
     <title>ted</title>
 </head>
 
 <body>
-    <section id="home">
+    <header>
+        <div class="container h-100">
+            <div class="row h-100">
+                <div class="col-md-4">
+                    <div class="logo-wrapper">
+                        <a href="#home" title="Logo"><img src="./images/Header-Logo.png" alt="Company Logo"
+                                class="logo"></a>
+                    </div>
 
-        <header id="Header_main">
-            <a href="#"><img id="logo-image" src="./images/Header-Logo.png" alt=""></a>
-            <ul id="menu">
-                <li><a href="#">About</a></li>
-                <li><a href="/our-team.html">Our Team</a></li>
-                <li><a href="/alumni.html">Alumni</a></li>
-                <li><a href="/sponsors.html">Sponsors</a></li>
-                <li><a href="/speakers.html">Contact Us</a></li>
-                <li class="register_button"><a href="Register">Register</a></li>
-            </ul>
-        </header>
+                </div>
+                <div class="col-md-8">
+                    <nav class="header_main">
+                        <ul class="menu">
+                            <li><a href="#home">Home</a></li>
+                            <li><a href="#about">About</a></li>
+                            <li><a href="#venue">Venue</a></li>
+                            <li><a href="#connect">Connect</a></li>
+                            <li><a href="#address">Address</a></li>
+                            <li><a href="#time">Time</a></li>
+                            <li><a href="#license">License</a></li>
+                            <li class="register_button"><a href="Register">Register</a></li>
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+        </div>
+    </header>
 
-        <h1>home</h1>
+    <section class="banner layer_gray">
+        <div class="banner_text">
+            <h1> <span>Igniting</span> Minds</h1>
+            <h2 class="">
+                October 16, 2017
+            </h2>
+            <p>at</p>
+            <h3>JAMIA MILLIA ISLAMIA</h3>
+        </div>
     </section>
-    <section id="About">
-        <h1>About</h1>
+
+    <section class="about">
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-6 col-md-7">
+                    <h2> About the event</h2>
+                    <!-- after -->
+                    <span></span>
+                    <div class="row about_text">
+                        <div class="col-md-12">
+                            <p>
+                                TEDxJMI brings together a collection of doers, thinkers, innovators,
+                                explorers, visionaries, teachers, learners and seeks to illuminate,
+                                inspire, change perceptions, incite action and foster new connections.
+                            </p>
+                            <p>
+                                We are focused on proffering a TED stage to speakers of varied backgrounds
+                                and experiences for inspirational and intellectual acceleration. Our
+                                event strategically allocates a window for collaboration of arts,
+                                sciences, entrepreneurship and women empowerment - ideas that are close
+                                to our central theme: <b>Igniting Minds.</b> </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-6 col-md-4 col-md-offset-1 xs-margin-8 xs-no-margin-rl xs-no-margin-bottom">
+                    <aside class="testimonial">
+                        <h4>About TEDx</h4>
+                        <p>In the spirit of ideas worth spreading, TEDx is a program for local,
+                            self-organized events that bring people together to share a TED-like
+                            experience. At a TEDx event, TEDTalks video and live speakers combine
+                            to spark deep discussion and connection. These local, self-organized
+                            events are branded with TEDx, where x = an independently organized
+                            TED event. The TED Conference provides general guidance for the
+                            TEDx program, but individual TEDx events are self-organized.</p>
+                    </aside>
+                </div>
+            </div>
+        </div>
     </section>
-    <section id="Venue">
-        <h1>venue</h1>
+
+    <section class="venue layer_gray">
+        <div class="container">
+            <div class="row">
+                <div class="venue_text text-center">
+                    <h2>Venue</h2>
+                    <p> Dr. M. A. Ansari Auditorium,
+                        <br>
+                        Jamia Millia Islamia
+                    </p>
+                    <a href="https://www.google.com/maps" target="_blank"
+                        class="btn btn-outline-white sm-btn-medium btn-large"> View
+                        location on map
+                    </a>
+                </div>
+            </div>
+        </div>
     </section>
-    <section id="Connect">
+    <section class="connect">
         <h1>connect with us</h1>
     </section>
-    <section id="Date">
-        <h1>data and time</h1>
+    <section class="address">
+        <h1>address</h1>
     </section>
-    <section id="Time_left">
+    <section class="time">
         <h1>timer</h1>
     </section>
-    <section id="footer_main">
-        <footer>
-            <h1>footer</h1>
-        </footer>
-    </section>
-    <script>
+    <footer class="license">
+        <h1>footer</h1>
+    </footer>
+
+    <!-- <script>
         /* 
         When the user scrolls down 50px from the top of the document, resize the header's font size
         and Color  //Needs work 
@@ -63,7 +141,10 @@
                 document.getElementById("Header_main").style.backgroundColor = "rgba(0, 0, 0, 0.15)";
             }
         }
-    </script>
+    </script> -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
+        crossorigin="anonymous"></script>
 </body>
 
 </html>

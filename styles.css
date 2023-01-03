@@ -1,3 +1,5 @@
+@import url(https://fonts.googleapis.com/css?family=Roboto:300,400,700);
+@import url(https://fonts.googleapis.com/css?family=Catamaran:400,700,900);
 * {
   margin: 0;
   padding: 0;
@@ -7,65 +9,107 @@ html {
 }
 
 body {
-  font-family: sans-serif;
-  font-size: 100%;
+  font-family: Roboto, sans-serif;
+  line-height: 23px;
+  font-size: 14px;
 }
 
 div,
+nav,
 section,
 span,
 ul,
 li,
 a,
-header {
+header,
+footer {
   box-sizing: border-box;
 }
 
-section {
+section,
+header,
+footer {
   background-color: red;
   float: left;
-  height: 100vh;
+  /* height: 100vh; */
   position: relative;
   width: 100%;
 }
 
-#Header_main {
-  align-items: center;
-  background-color: rgba(0, 0, 0, 0.15);
-  border-bottom: 1px solid rgba(255, 255, 255, 0.15);
-  display: flex;
-  height: 82px;
-  justify-content: space-around;
-  padding: 20px 15px;
-  position: fixed;
-  transition: 0.2s;
+.layer_gray:before {
+  position: absolute;
+  display: block;
   width: 100%;
-  z-index: 999;
+  height: 100%;
+  content: "";
+  background: rgba(0, 0, 0, 0.7);
+  z-index: 2;
 }
 
-#logo-image {
-  cursor: pointer;
-  height: 43px;
-  margin-left: 140px;
+/* =================== */
+/* ===== HEADER ===== */
+/* =================== */
+
+header {
+  display: flex;
+  align-items: center;
+  transition: 0.2s;
+  width: 100%;
+  height: 80px;
+  left: 0;
+  top: 0;
+  z-index: 999;
+  position: fixed;
+  background-color: rgba(0, 0, 0, 0.15);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.15);
+}
+
+.logo-wrapper {
+  display: flex;
+  align-items: center;
+  height: 100%;
+}
+
+.logo {
   width: 192px;
+  height: 43px;
 }
-#menu {
-  padding: 28px 0;
+
+.header_main {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  align-content: space-around;
+  height: 100%;
 }
-#menu li {
-  display: inline-block;
+
+.menu {
+  display: flex;
+  flex-wrap: wrap;
+  padding-inline: 0;
+  justify-content: center;
+  margin: 0;
+  height: 100%;
+}
+
+.menu li {
+  display: flex;
+  align-items: center;
   list-style: none;
   margin: 0 15px;
 }
 
-#menu li a {
+.menu li a {
   color: white;
   padding: 5px 0;
   position: relative;
+  font-size: 14px;
   text-decoration: none;
+  text-transform: uppercase;
+  letter-spacing: 1px;
 }
 
-#menu li a::after {
+.menu li a::after {
   background: white;
   bottom: 0;
   content: "";
@@ -76,7 +120,7 @@ section {
   width: 0;
 }
 
-#menu li a:hover::after {
+.menu li a:hover::after {
   width: 100%;
 }
 
@@ -87,32 +131,186 @@ section {
   padding: 10px 30px;
 }
 
-h1 {
+/* =================== */
+/* ===== BANNER ===== */
+/* =================== */
+
+.banner {
+  position: relative;
+  background-image: url(./images/home-bg-image.jpg);
+  background-size: cover;
+  background-position: center;
+  height: 100vh;
+}
+
+.banner_text {
+  text-align: center;
   color: white;
   left: 50%;
   position: absolute;
   top: 50%;
   transform: translate(-50%, -50%);
+  z-index: 3;
 }
 
-#home {
-  background-image: url(./images/home-bg-image.jpg);
+.banner_text h1 {
+  font-size: 80px;
+  line-height: 80px;
+  letter-spacing: 2px;
+  font-weight: 900;
 }
-#About {
-  background-color: green;
+
+.banner_text h1 span {
+  color: #e62b1e;
 }
-#Venue {
-  background-color: yellow;
+
+.banner_text h2 {
+  font-size: 50px;
+  line-height: 50px;
+  font-weight: 700;
+  letter-spacing: 2px;
 }
-#Connect {
+
+.banner_text h3 {
+  font-size: 35px;
+  line-height: 38px;
+  letter-spacing: 2px;
+}
+
+.banner_text p {
+  font-size: 24px;
+  line-height: 32px;
+  margin-bottom: 10px;
+}
+
+/* =================== */
+/* ===== ABOUT ===== */
+/* =================== */
+
+.about {
+  background-color: #fcfcfc;
+  padding: 80px 0;
+}
+
+.about h2 {
+  font-weight: 700;
+  color: #272727;
+  font-size: 45px;
+  line-height: 45px;
+}
+
+.about span {
+  display: inline-block;
+  width: 80px;
+  height: 8px;
+  margin-top: 26.094px;
+  background-color: #e62b1e;
+}
+
+.about_text p {
+  font-size: 18px;
+  line-height: 26px;
+  color: #272727;
+  margin-top: 35.875px;
+}
+
+.testimonial {
+  border: 1px solid #dfdfdf;
+  background: transparent;
+  margin-left: 97px;
+  border-radius: 3px;
+  padding: 18px;
+  width: 390px;
+}
+
+.testimonial h4 {
+  margin-bottom: 16px;
+  color: rgb(51, 51, 51);
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 19.8px;
+  font-family: Catamaran, sans-serif;
+}
+
+.testimonial p {
+  color: rgb(51, 51, 51);
+  font-size: 15px;
+  line-height: 24px;
+  font-family: Roboto, sans-serif;
+}
+
+/* =================== */
+/* ===== VENUE ===== */
+/* =================== */
+
+.venue {
+  display: flex;
+  align-items: center;
+  position: relative;
+  background-image: url(./images/venue-bg-image.jpg);
+  background-size: cover;
+  background-position: center bottom;
+  height: 100vh;
+}
+
+.venue::before {
+  opacity: 0.4;
+}
+.venue_text {
+  z-index: 5;
+}
+.venue_text h2 {
+  color: #fff;
+  font-size: 70px;
+  font-weight: 900;
+  font-family: Catamaran, sans-serif;
+  letter-spacing: 2px;
+  line-height: 70px;
+  text-transform: uppercase;
+}
+
+.venue_text p {
+  color: #fff;
+  font-family: Catamaran, sans-serif;
+  font-size: 28px;
+  font-weight: 700;
+  letter-spacing: 1px;
+  line-height: 34px;
+  margin-top: 50px;
+  text-transform: uppercase;
+}
+
+.venue_text a {
+  color: #fff;
+  cursor: pointer;
+  display: inline-block;
+  font-size: 16px;
+  font-weight: 600;
+  letter-spacing: 1px;
+  line-height: 22.85px;
+  text-align: center;
+  text-transform: uppercase;
+  border: 2px solid white;
+  border-radius: 0;
+  padding: 16px 30px;
+  margin-top: 33.7px;
+}
+
+.venue_text a:hover {
+  background-color: white;
+  color: #272727;
+}
+
+.connect {
   background-color: blue;
 }
-#Date {
+.address {
   background-color: violet;
 }
-#Time_left {
+.time {
   background-color: turquoise;
 }
-#footer_main {
+
+.license {
   background-color: aquamarine;
 }
