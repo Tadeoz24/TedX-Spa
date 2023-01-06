@@ -30,7 +30,7 @@ section,
 header,
 footer {
   background-color: red;
-  float: left;
+
   /* height: 100vh; */
   position: relative;
   width: 100%;
@@ -301,16 +301,318 @@ header {
   color: #272727;
 }
 
+/* =================== */
+/* ===== Connect with us  ===== */
+/* =================== */
 .connect {
-  background-color: blue;
-}
-.address {
-  background-color: violet;
-}
-.time {
-  background-color: turquoise;
+  background-color: #f6f6f6;
+  padding-top: 80px;
+  padding-bottom: 80px;
+  position: relative;
+  width: 100%;
 }
 
-.license {
-  background-color: aquamarine;
+.connect h2 {
+  color: #272727;
+  font-family: Catamaran, sans-serif;
+  font-size: 45px;
+  font-weight: 700;
+  line-height: 45px;
+}
+
+.line {
+  display: inline-block;
+  width: 80px;
+  height: 8px;
+  margin-top: 18px;
+  background-color: #e62b1e;
+  margin-bottom: 50px;
+}
+
+.facebook,
+.twitter,
+.instagram {
+  padding-left: 15px;
+  padding-right: 15px;
+  margin-bottom: 15px;
+  float: left;
+  position: relative;
+  height: 111px;
+  width: 390px;
+}
+.twitter,
+.instagram {
+  height: 581px;
+}
+.facebook_box,
+.twitter_box,
+.instagram_box {
+  border: 1px solid #dfdfdf;
+  border-radius: 3px;
+  box-shadow: 5px 5px 30px 0 rgb(0 0 0 / 3%);
+  position: relative;
+  width: 358px;
+  height: 109px;
+}
+.twitter_box,
+.instagram_box {
+  height: 579px;
+}
+.facebook_text,
+.twitter_text,
+.instagram_text {
+  width: 358px;
+  height: 109px;
+  padding-top: 25px;
+  padding-bottom: 25px;
+  display: flex;
+  justify-content: center;
+}
+
+.facebook_text_st,
+.twitter_text_st,
+.instagram_text_st {
+  display: block;
+  width: 300px;
+  height: 24px;
+
+  margin-bottom: 12px;
+  font-family: Roboto, sans-serif;
+  font-size: 15px;
+  font-weight: 700;
+  letter-spacing: 1px;
+  line-height: 24px;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+/* ===== ADDRESS ===== */
+/* =================== */
+.address {
+  background-color: #fff;
+  padding-top: 80px;
+  padding-bottom: 80px;
+}
+.event_data,
+.event_address,
+.event_info {
+  float: left;
+  height: 157px;
+  padding-left: 15px;
+  padding-right: 15px;
+  position: relative;
+  text-align: center;
+  width: 390px;
+  height: 157px;
+}
+.event_data > span {
+  color: rgb(0, 0, 0);
+  font-family: Catamaran, sans-serif;
+  font-size: 15px;
+  font-weight: 700;
+  letter-spacing: 1px;
+  line-height: 24px;
+  text-transform: uppercase;
+  margin-top: 18px;
+}
+.event_data > p {
+  color: rgb(39, 39, 39);
+  font-family: Catamaran, sans-serif;
+  font-size: 20px;
+  line-height: 30px;
+}
+
+.event_address > span {
+  color: rgb(0, 0, 0);
+  font-family: Catamaran, sans-serif;
+  font-size: 15px;
+  font-weight: 700;
+  letter-spacing: 1px;
+  line-height: 24px;
+  text-transform: uppercase;
+  margin-top: 18px;
+}
+.event_address > p {
+  color: rgb(39, 39, 39);
+  font-family: Catamaran, sans-serif;
+  font-size: 20px;
+  line-height: 30px;
+}
+
+.event_data,
+.event_address,
+svg {
+  display: block;
+  font-size: 45px;
+  line-height: 45px;
+  color: rgb(230, 43, 30);
+  text-align: center;
+}
+
+.event_info {
+  width: 360px;
+  height: 81.703px;
+  padding-left: 15px;
+  padding-right: 15px;
+  margin-top: 38.047px;
+  padding-bottom: 38.047px;
+}
+.event_info a {
+  padding: 15px;
+  border: 3px solid red;
+  border-radius: 0px;
+  background-color: #fff;
+  background-image: none;
+  color: rgb(230, 43, 30);
+  cursor: pointer;
+  display: flex;
+  justify-content: space-around;
+  font-size: 16px;
+  font-weight: 600;
+
+  letter-spacing: 1px;
+  line-height: 22.8571px;
+  margin-bottom: 0px;
+  margin-left: 0px;
+  margin-right: 0px;
+  text-align: center;
+  width: 187px;
+  height: 81.7031px;
+}
+.event_info a:hover {
+  background-color: red;
+}
+/* =================== */ /* =================== */ /* =================== */
+/* ===== timer ===== */
+/* =================== */ /* =================== */ /* =================== */
+
+.time {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  background-image: url(./images/timer-bg.jpeg);
+  background-size: cover;
+  background-position: center center;
+  height: 50vh;
+}
+.countdown-timer {
+  display: flex;
+  justify-content: center;
+  width: 1170px;
+  height: 70.398px;
+}
+
+.days,
+.hours,
+.minutes,
+.seconds {
+  width: 100px;
+  height: 100px;
+  flex-wrap: wrap;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding-left: 2%;
+  padding-right: 2%;
+}
+.value {
+  color: rgba(255, 255, 255, 0.75);
+  font-size: 64px;
+  font-weight: 800;
+  height: 23px;
+  line-height: 23px;
+  text-align: center;
+  white-space: nowrap;
+  vertical-align: baseline;
+  z-index: 12;
+}
+.label {
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 18px;
+  padding-top: 24px;
+  text-align: center;
+  white-space: nowrap;
+  vertical-align: baseline;
+  color: rgba(255, 255, 255, 0.75);
+  z-index: 12;
+}
+
+/* =================== */ /* =================== */ /* =================== */
+/* ===== footer ===== */
+/* =================== */ /* =================== */ /* =================== */
+
+.footer {
+  background-color: #fff;
+  padding: 50px 0 32px;
+  height: 214.87px;
+  width: 100%;
+}
+
+.footer-logo {
+  text-align: center;
+  padding-bottom: 25px;
+  display: flex;
+  flex-direction: column;
+}
+.footer-logo img {
+  width: 120px;
+}
+.disclaimer {
+  padding-bottom: 25px;
+  font-size: 14px;
+  width: 360px;
+  height: 46px;
+  line-height: 23px;
+  margin-block-end: 10px;
+}
+
+.footer-social {
+  text-align: right;
+}
+
+.list-inline {
+  display: inline-block;
+  font-size: 24px;
+  line-height: 32px;
+  list-style: none;
+  padding-left: 0;
+}
+
+.list-inline li {
+  display: inline-block;
+  font-size: 24px;
+  line-height: 32px;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+.footer_logo {
+  color: rgb(98, 98, 98);
+  cursor: pointer;
+  display: inline-block;
+  font-size: 24px;
+  font-style: normal;
+  width: 28px;
+  height: 24px;
+}
+
+#scroll-top-btn {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  background-color: #333;
+  color: #fff;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  padding: 10px;
+  border-radius: 5px;
+  display: none;
+  z-index: 999;
+}
+
+#scroll-top-btn:hover {
+  background-color: #777;
 }
