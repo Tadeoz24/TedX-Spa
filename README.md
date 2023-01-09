@@ -28,7 +28,7 @@ Users should be able to:
 
 ### Links
 
-- Live Site URL: [Add live site URL here](https://tadeoz24.github.io/TedX-Spa/)
+- Live Site URL: [https://tadeoz24.github.io/TedX-Spa/](https://tadeoz24.github.io/TedX-Spa/)
 
 ## My process
 
@@ -43,9 +43,9 @@ Users should be able to:
 
 ### Useful resources
 
-- [Example resource 1](https://developer.mozilla.org/en-US/) - This helped. I really liked this webpage and will use it going forward.
-- [Example resource 2](https://flexboxfroggy.com/) - This is an amazing soft which helped me finally understand CSS Flexbox. I'd recommend it to anyone still learning this concept.
-- [Example resource 1](https://css-tricks.com/centering-css-complete-guide/) - CSS Centering Complete Guide
+- [MDN](https://developer.mozilla.org/en-US/) - This helped. I really liked this webpage and will use it going forward.
+- [Flexbox Froggy](https://flexboxfroggy.com/) - This is an amazing soft which helped me finally understand CSS Flexbox. I'd recommend it to anyone still learning this concept.
+- [CSS Centering](https://css-tricks.com/centering-css-complete-guide/) - CSS Centering Complete Guide
 
 ## Author
 
