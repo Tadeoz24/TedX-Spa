@@ -1,0 +1,57 @@
+.banner {
+  background-image: url("../images/home-bg-image.jpg");
+  background-position: center;
+  background-size: cover;
+  height: 100vh;
+  position: relative;
+}
+
+.banner_text {
+  color: white;
+  left: 50%;
+  position: absolute;
+  text-align: center;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 3;
+}
+
+.banner_text h1 {
+  font-size: 80px;
+  font-weight: 900;
+  letter-spacing: 2px;
+  line-height: 80px;
+}
+
+.banner_text h1 span {
+  color: #e62b1e;
+}
+
+.banner_text h2 {
+  font-size: 50px;
+  font-weight: 700;
+  letter-spacing: 2px;
+  line-height: 50px;
+}
+
+.banner_text h3 {
+  font-size: 35px;
+  letter-spacing: 2px;
+  line-height: 38px;
+}
+
+.banner_text p {
+  font-size: 24px;
+  line-height: 32px;
+  margin-bottom: 10px;
+}
+
+.layer_gray:before {
+  background: rgba(0, 0, 0, 0.7);
+  content: "";
+  display: block;
+  height: 100%;
+  position: absolute;
+  width: 100%;
+  z-index: 2;
+}

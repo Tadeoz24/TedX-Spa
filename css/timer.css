@@ -1,0 +1,55 @@
+.time {
+  align-items: center;
+  background-image: url(../images/timer-bg.jpeg);
+  background-position: center center;
+  background-size: cover;
+  display: flex;
+  height: 50vh;
+  justify-content: center;
+  position: relative;
+}
+
+.countdown-timer {
+  display: flex;
+  height: 70.398px;
+  justify-content: center;
+  width: 1170px;
+}
+
+.days,
+.hours,
+.minutes,
+.seconds {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  height: 100px;
+  justify-content: center;
+  padding-left: 2%;
+  padding-right: 2%;
+  width: 100px;
+}
+
+.value {
+  color: rgba(255, 255, 255, 0.75);
+  font-size: 64px;
+  font-weight: 800;
+  height: 23px;
+  line-height: 23px;
+  text-align: center;
+  vertical-align: baseline;
+  white-space: nowrap;
+  z-index: 12;
+}
+
+.label {
+  color: rgba(255, 255, 255, 0.75);
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 18px;
+  padding-top: 24px;
+  text-align: center;
+  vertical-align: baseline;
+  white-space: nowrap;
+  z-index: 12;
+}

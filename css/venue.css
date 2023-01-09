@@ -1,0 +1,59 @@
+.venue {
+  align-items: center;
+  background-image: url(../images/venue-bg-image.jpg);
+  background-position: center bottom;
+  background-size: cover;
+  display: flex;
+  height: 100vh;
+  position: relative;
+}
+
+.venue::before {
+  opacity: 0.4;
+}
+
+.venue_text {
+  z-index: 5;
+}
+
+.venue_text h2 {
+  color: #fff;
+  font-family: Catamaran, sans-serif;
+  font-size: 70px;
+  font-weight: 900;
+  letter-spacing: 2px;
+  line-height: 70px;
+  text-transform: uppercase;
+}
+
+.venue_text p {
+  color: #fff;
+  font-family: Catamaran, sans-serif;
+  font-size: 28px;
+  font-weight: 700;
+  letter-spacing: 1px;
+  line-height: 34px;
+  margin-top: 50px;
+  text-transform: uppercase;
+}
+
+.venue_text a {
+  border-radius: 0;
+  border: 2px solid white;
+  color: #fff;
+  cursor: pointer;
+  display: inline-block;
+  font-size: 16px;
+  font-weight: 600;
+  letter-spacing: 1px;
+  line-height: 22.85px;
+  margin-top: 33.7px;
+  padding: 16px 30px;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.venue_text a:hover {
+  background-color: white;
+  color: #272727;
+}

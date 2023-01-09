@@ -1,0 +1,10 @@
+@import url(https://fonts.googleapis.com/css?family=Roboto:300,400,700);
+@import url(https://fonts.googleapis.com/css?family=Catamaran:400,700,900);
+
+:root {
+  --black: black;
+  --primary: Catamaran, sans-serif;
+  --red: red;
+  --secondary: Roboto, sans-serif;
+  --white: white;
+}

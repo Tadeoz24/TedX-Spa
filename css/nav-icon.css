@@ -1,0 +1,27 @@
+.custom_dropdown_button {
+  background-color: transparent;
+  border-radius: 0;
+  border: 1px solid #fff;
+  cursor: pointer;
+  margin-right: 30px;
+  overflow: hidden;
+  padding: 0 10px;
+}
+
+.icon_bar {
+  background-color: white;
+  border-radius: 1px;
+  display: block;
+  height: 2px;
+  width: 22px;
+}
+
+.icon_bar:not(:first-of-type) {
+  margin-top: 4px;
+}
+
+@media only screen and (min-width: 1200px) {
+  .custom_dropdown_button {
+    display: none;
+  }
+}
