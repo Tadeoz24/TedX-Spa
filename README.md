@@ -1,3 +1,7 @@
+### Screenshot
+
+![](./images/fullPage.png)
+
 # TEDxJMI
 
 This is a single page application Challenge of [TED Programs](https://www.ted.com/). Challenges help you improve your coding skills by building realistic projects.
@@ -21,10 +25,6 @@ Users should be able to:
 
 - View the optimal layout depending on their device's screen size
 - See hover states for interactive elements
-
-### Screenshot
-
-![](./images/fullPage.png)
 
 ### Links
 
